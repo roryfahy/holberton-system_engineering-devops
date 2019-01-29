@@ -1,0 +1,1 @@
+this is the directory for the day 1 project focused on understanding the basics of shell
