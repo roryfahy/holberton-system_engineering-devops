@@ -6,7 +6,7 @@ describing what each script is doing
 12-combinations
 13-print_float
 14-decimal_to_hexadecimal
-1-hello_you
+1-hello_you: prints out the user using the USER var
 2-path
 3-paths
 4-global_variables
