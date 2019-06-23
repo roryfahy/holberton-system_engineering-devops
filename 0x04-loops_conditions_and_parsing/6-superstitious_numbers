@@ -4,15 +4,13 @@ count=1
 while [ $count -lt 21 ]
 do
     echo $count
-    if [ $count -eq 4 ]
-    then
-	echo bad luck from China
-    elif [ $count -eq 9 ]
-    then
-	echo bad luck from Japan
-    elif [ $count -eq 17 ]
-    then
-	echo bad luck from Italy
-    fi
+    case $count in
+	4) echo bad luck from China
+	    ;;
+	9) echo bad luck from Japan
+	    ;;
+	17) echo bad luck from Italy
+	    ;;
+    esac
     count=$((count + 1))
 done
