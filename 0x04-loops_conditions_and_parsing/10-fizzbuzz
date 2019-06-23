@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # display fizz buzz from 1 to 100
 for i in {1..100}; do
-    if [ $i % 15 -eq 0 ]; then
+    if [ $((i % 15)) -eq 0 ]; then
 	echo FizzBuzz
-    elif [ $i % 3 -eq 0 ]; then
+    elif [ $((i % 3)) -eq 0 ]; then
 	echo Fizz
-    elif [ $i % 5 -eq 0 ]; then
+    elif [ $((i % 5)) -eq 0 ]; then
 	echo Buzz
     else
 	echo "$i"
     fi
+done
