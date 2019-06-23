@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+count=1
+while [ $count -lt 11 ]
+do
+    echo "Holberton School"
+    if [ $count -eq 9 ]
+    then
+	echo Hi
+    fi
+    count=$((count + 1))
+done

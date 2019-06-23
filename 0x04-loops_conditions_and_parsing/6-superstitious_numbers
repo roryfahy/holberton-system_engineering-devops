@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# loop to print count 1-20 with conditional formatting
+count=1
+while [ $count -lt 21 ]
+do
+    echo $count
+    if [ $count -eq 4 ]
+    then
+	echo bad luck from China
+    elif [ $count -eq 9 ]
+    then
+	echo bad luck from Japan
+    elif [ $count -eq 17 ]
+    then
+	echo bad luck from Italy
+    fi
+    count=$((count + 1))
+done
