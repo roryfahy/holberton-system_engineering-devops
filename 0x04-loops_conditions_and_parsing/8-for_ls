@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # display contents of current directory removing anything before a hiphen
 for field in *; do
-    echo $field | cut --delimiter=- --fields=2
+    echo "$field" | cut --delimiter=- --fields=2
 done
