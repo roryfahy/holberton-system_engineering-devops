@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # display time for 12 hrs and 59 min
-hour=1
+hour=0
 while [ $hour -lt 13 ]
 do
     echo "Hour: $hour"
