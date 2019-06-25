@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+# tell a story using vars from etc/passwd
+while IFS=: read -r un pw uid gid uidi hd cs
+do
+    echo "The user $un is part of the $gid gang, lives in $hd and rides $cs." \
+	"${uid}'s place is protected by the passcode ${pw}," \
+	"more info about the user here: $uidi"
+done < /etc/passwd

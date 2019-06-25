@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+# display the content of /etc/passwd
+while read string; do
+echo "$string" | cut -d : -f 1,3,6; done < /etc/passwd
