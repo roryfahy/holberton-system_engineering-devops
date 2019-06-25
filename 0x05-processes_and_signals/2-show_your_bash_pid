@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+# display lines containing bash word
+# shellcheck disable=SC2009
+./1-list_your_processes | grep bash
