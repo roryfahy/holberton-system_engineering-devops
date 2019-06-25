@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# infinite loop of infinity
+num=1
+while [ $num -eq 1 ]; do
+    echo To infinity and beyond
+    sleep 2
+    done
