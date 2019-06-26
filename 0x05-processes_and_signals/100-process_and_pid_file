@@ -1,1 +1,24 @@
 #!/usr/bin/env bash
+# create file w/pid, display text indefinitely and more
+echo "$$" > /var/run/holbertonscript.pid
+sterm () {
+    echo "I hate the kill command"
+    rm /var/run/holbertonscript.pid
+    exit
+}
+sint () {
+    echo "Y U no love me?!"
+}
+squit () {
+    rm /var/run/holbertonscript.pid
+    exit
+}
+trap sterm TERM
+trap sint INT
+trap squit QUIT
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
