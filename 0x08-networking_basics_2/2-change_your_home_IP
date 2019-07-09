@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# configure ubuntu server
+echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" > /tmp/newfile
+cat /etc/hosts >> /tmp/newfile
+sudo cp /tmp/newfile /etc/hosts
