@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# set up Nginx on remote server and apply redirection
+apt update
+apt install nginx -y
+touch /var/www/html/index.html
+echo 'Holberton School' > '/var/www/html/index.html'
+sed -i "s|server_name _;|server_name _;\n\nlocation /redirect_me {\n\treturn 301 https://www.youtube.com/watch?v=QH2-TGU1wu4;\n}\n|" /etc/nginx/sites-available/default
+service nginx restart
