@@ -1,0 +1,9 @@
+#!/usr/bin/env bash                                 
+# set up Nginx on remote server                     
+apt update
+apt install nginx -y
+echo 'Holberton School' > '/var/www/html/index.html'
+='/etc/nginx/sites-available/default'
+
+service nginx reload
+service nginx restart
