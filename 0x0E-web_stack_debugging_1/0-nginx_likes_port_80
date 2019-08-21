@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# script to get nginx configured properly
+sed -i "s|8080|80|" /etc/nginx/sites-enabled/default
+pkill nginx
+service nginx restart

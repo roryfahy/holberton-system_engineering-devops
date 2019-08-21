@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script to get nginx configured properly
+sed -i
