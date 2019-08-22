@@ -4,7 +4,7 @@ apt update
 apt install nginx -y
 touch /var/www/html/index.html
 echo 'Holberton School' > '/var/www/html/index.html'
-string='server_name _;\n\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n\nerror_page 404 /404.html;\n\n\tlocation /404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n}\n\nadd_header X-Served-By $hostname;\n'
+string="server_name _;\n\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n\nerror_page 404 /404.html;\n\n\tlocation /404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n}\n\nadd_header X-Served-By \$hostname;\n"
 sed -i "s|server_name _;|$string|" /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 
