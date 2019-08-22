@@ -1,1 +1,29 @@
 #!/usr/bin/env bash
+# display info about subdomains of helixr.tech
+
+func () {
+    subdomain="$2"
+    RECORD=$(dig "$1" | awk '/IN/ && $1 !~ /^;/ {print $4}')
+    NAME=$(dig "$1" | awk '/IN/ && $1 !~ /^;/ {print $5}')
+    awk 'BEGIN {print "The subdomain "; }'
+    echo "${subdomain} is a ${RECORD} record and points to ${NAME}"
+}
+
+    # if [ -z "$1" ]
+    # then
+    # 	exit??
+    # else
+    # fi
+
+
+    
+    domain="$1"
+    if [ "$2" ]
+    then
+
+    fi
+
+
+echo "The subdomain 
+    return 0
+}
