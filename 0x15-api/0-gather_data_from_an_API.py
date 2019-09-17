@@ -20,7 +20,7 @@ if __name__ == '__main__':
     NUMBER_OF_DONE_TASKS = len(comp_tasks)
     TOTAL_NUMBER_OF_TASKS = len(emp_tasks)
 
-    print("Employee {} is done with tasks ({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(
               EMPLOYEE_NAME,
               NUMBER_OF_DONE_TASKS,
