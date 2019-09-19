@@ -9,6 +9,6 @@ def number_of_subscribers(subreddit):
     user_agent = {'User-agent': 'Mozilla/5.0'}
     url = "https://www.reddit.com/r/" + subreddit + "/about.json"
     resp = requests.get(url, allow_redirects=False, headers=user_agent)
-    if resp.status_code == 404:
+    if resp.status_code in (302, 404):
         return 0
     return resp.json().get('data').get('subscribers')
