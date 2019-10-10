@@ -6,6 +6,9 @@ file { 'resource title':
             group   => 'root',
             content => 'ULIMIT="-n 15000"\n',
             }
-exec { 'not resource title':
-          command => '/usr/bin/sudo /usr/sbin/service nginx restart'
-            }
+service { 'Nginx':
+  ensure          => running,
+    hasrestart    => true,
+      name        => 'nginx',
+        subscribe => File['/etc/default/nginx']
+  }
