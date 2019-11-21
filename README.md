@@ -29,3 +29,8 @@ Directories | Description
 [0x14-mysql](./0x14-mysql) | Setting up a Primary-Replica MySQL cluster
 [0x15-api](./0x15-api) | API queries
 [0x16-api_advanced](./0x16-api_advanced) | More API queries
+
+If you want to reach out, here's my info:
+[LinkedIn](https://www.linkedin.com/in/rory-fahy-65743885/)
+[Twitter](https://twitter.com/Rory_Chillmore)
+[AmbientDJ landing page](https://kylelitscher.wixsite.com/ambientdj)
