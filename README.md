@@ -30,7 +30,7 @@ Directories | Description
 [0x15-api](./0x15-api) | API queries
 [0x16-api_advanced](./0x16-api_advanced) | More API queries
 
-If you have any questions, please don't hesitate to reach out! I swear I don't byte:| 
-[LinkedIn](https://www.linkedin.com/in/rory-fahy-65743885/)|
+If you have any questions, please don't hesitate to reach out! I swear I don't byte: | 
+[LinkedIn](https://www.linkedin.com/in/rory-fahy-65743885/) |
  [Twitter](https://twitter.com/Rory_Chillmore) |
  [AmbientDJ landing page](https://kylelitscher.wixsite.com/ambientdj)
