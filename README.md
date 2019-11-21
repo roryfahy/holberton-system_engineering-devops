@@ -32,5 +32,5 @@ Directories | Description
 
 If you have any questions, please don't hesitate to reach out! I swear I don't byte:| 
 [LinkedIn](https://www.linkedin.com/in/rory-fahy-65743885/)|
- [Twitter](https://twitter.com/Rory_Chillmore)|
+ [Twitter](https://twitter.com/Rory_Chillmore) |
  [AmbientDJ landing page](https://kylelitscher.wixsite.com/ambientdj)
